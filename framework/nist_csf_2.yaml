@@ -1,0 +1,40 @@
+# NIST Cybersecurity Framework 2.0 - Functions and Categories (6 functions, 22 categories)
+# Mapping is done at CATEGORY level (e.g. PR.AA). Subcategory-level mapping (PR.AA-01 ...)
+# is a good stretch goal once the category-level crosswalk is stable.
+framework:
+  id: nist_csf_2
+  short: NIST-CSF
+  name: "NIST Cybersecurity Framework 2.0"
+  kind: control_set
+  aggregation: mean   # how supporting-control status rolls up: weakest | mean
+  version: "2.0"
+
+items:
+  # GOVERN
+  - {id: "GV.OC", theme: Govern,   title: "Organizational Context"}
+  - {id: "GV.RM", theme: Govern,   title: "Risk Management Strategy"}
+  - {id: "GV.RR", theme: Govern,   title: "Roles, Responsibilities, and Authorities"}
+  - {id: "GV.PO", theme: Govern,   title: "Policy"}
+  - {id: "GV.OV", theme: Govern,   title: "Oversight"}
+  - {id: "GV.SC", theme: Govern,   title: "Cybersecurity Supply Chain Risk Management"}
+  # IDENTIFY
+  - {id: "ID.AM", theme: Identify, title: "Asset Management"}
+  - {id: "ID.RA", theme: Identify, title: "Risk Assessment"}
+  - {id: "ID.IM", theme: Identify, title: "Improvement"}
+  # PROTECT
+  - {id: "PR.AA", theme: Protect,  title: "Identity Management, Authentication, and Access Control"}
+  - {id: "PR.AT", theme: Protect,  title: "Awareness and Training"}
+  - {id: "PR.DS", theme: Protect,  title: "Data Security"}
+  - {id: "PR.PS", theme: Protect,  title: "Platform Security"}
+  - {id: "PR.IR", theme: Protect,  title: "Technology Infrastructure Resilience"}
+  # DETECT
+  - {id: "DE.CM", theme: Detect,   title: "Continuous Monitoring"}
+  - {id: "DE.AE", theme: Detect,   title: "Adverse Event Analysis"}
+  # RESPOND
+  - {id: "RS.MA", theme: Respond,  title: "Incident Management"}
+  - {id: "RS.AN", theme: Respond,  title: "Incident Analysis"}
+  - {id: "RS.CO", theme: Respond,  title: "Incident Response Reporting and Communication"}
+  - {id: "RS.MI", theme: Respond,  title: "Incident Mitigation"}
+  # RECOVER
+  - {id: "RC.RP", theme: Recover,  title: "Incident Recovery Plan Execution"}
+  - {id: "RC.CO", theme: Recover,  title: "Incident Recovery Communication"}

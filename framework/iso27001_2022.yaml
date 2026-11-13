@@ -1,0 +1,112 @@
+# ISO/IEC 27001:2022 - Annex A (93 controls, 4 themes)
+# Only control IDs and short titles are recorded here. The full normative text is
+# copyrighted by ISO/IEC - buy the standard and keep it alongside this repo.
+framework:
+  id: iso27001_2022
+  short: ISO27001
+  name: "ISO/IEC 27001:2022 Annex A"
+  kind: control_set
+  aggregation: weakest   # how supporting-control status rolls up: weakest | mean
+  version: "2022"
+
+items:
+  # ---- 5. Organizational controls (37) ----
+  - {id: "5.1",  theme: Organizational, title: "Policies for information security"}
+  - {id: "5.2",  theme: Organizational, title: "Information security roles and responsibilities"}
+  - {id: "5.3",  theme: Organizational, title: "Segregation of duties"}
+  - {id: "5.4",  theme: Organizational, title: "Management responsibilities"}
+  - {id: "5.5",  theme: Organizational, title: "Contact with authorities"}
+  - {id: "5.6",  theme: Organizational, title: "Contact with special interest groups"}
+  - {id: "5.7",  theme: Organizational, title: "Threat intelligence"}
+  - {id: "5.8",  theme: Organizational, title: "Information security in project management"}
+  - {id: "5.9",  theme: Organizational, title: "Inventory of information and other associated assets"}
+  - {id: "5.10", theme: Organizational, title: "Acceptable use of information and other associated assets"}
+  - {id: "5.11", theme: Organizational, title: "Return of assets"}
+  - {id: "5.12", theme: Organizational, title: "Classification of information"}
+  - {id: "5.13", theme: Organizational, title: "Labelling of information"}
+  - {id: "5.14", theme: Organizational, title: "Information transfer"}
+  - {id: "5.15", theme: Organizational, title: "Access control"}
+  - {id: "5.16", theme: Organizational, title: "Identity management"}
+  - {id: "5.17", theme: Organizational, title: "Authentication information"}
+  - {id: "5.18", theme: Organizational, title: "Access rights"}
+  - {id: "5.19", theme: Organizational, title: "Information security in supplier relationships"}
+  - {id: "5.20", theme: Organizational, title: "Addressing information security within supplier agreements"}
+  - {id: "5.21", theme: Organizational, title: "Managing information security in the ICT supply chain"}
+  - {id: "5.22", theme: Organizational, title: "Monitoring, review and change management of supplier services"}
+  - {id: "5.23", theme: Organizational, title: "Information security for use of cloud services"}
+  - {id: "5.24", theme: Organizational, title: "Information security incident management planning and preparation"}
+  - {id: "5.25", theme: Organizational, title: "Assessment and decision on information security events"}
+  - {id: "5.26", theme: Organizational, title: "Response to information security incidents"}
+  - {id: "5.27", theme: Organizational, title: "Learning from information security incidents"}
+  - {id: "5.28", theme: Organizational, title: "Collection of evidence"}
+  - {id: "5.29", theme: Organizational, title: "Information security during disruption"}
+  - {id: "5.30", theme: Organizational, title: "ICT readiness for business continuity"}
+  - {id: "5.31", theme: Organizational, title: "Legal, statutory, regulatory and contractual requirements"}
+  - {id: "5.32", theme: Organizational, title: "Intellectual property rights"}
+  - {id: "5.33", theme: Organizational, title: "Protection of records"}
+  - {id: "5.34", theme: Organizational, title: "Privacy and protection of PII"}
+  - {id: "5.35", theme: Organizational, title: "Independent review of information security"}
+  - {id: "5.36", theme: Organizational, title: "Compliance with policies, rules and standards for information security"}
+  - {id: "5.37", theme: Organizational, title: "Documented operating procedures"}
+
+  # ---- 6. People controls (8) ----
+  - {id: "6.1", theme: People, title: "Screening"}
+  - {id: "6.2", theme: People, title: "Terms and conditions of employment"}
+  - {id: "6.3", theme: People, title: "Information security awareness, education and training"}
+  - {id: "6.4", theme: People, title: "Disciplinary process"}
+  - {id: "6.5", theme: People, title: "Responsibilities after termination or change of employment"}
+  - {id: "6.6", theme: People, title: "Confidentiality or non-disclosure agreements"}
+  - {id: "6.7", theme: People, title: "Remote working"}
+  - {id: "6.8", theme: People, title: "Information security event reporting"}
+
+  # ---- 7. Physical controls (14) ----
+  - {id: "7.1",  theme: Physical, title: "Physical security perimeters"}
+  - {id: "7.2",  theme: Physical, title: "Physical entry"}
+  - {id: "7.3",  theme: Physical, title: "Securing offices, rooms and facilities"}
+  - {id: "7.4",  theme: Physical, title: "Physical security monitoring"}
+  - {id: "7.5",  theme: Physical, title: "Protecting against physical and environmental threats"}
+  - {id: "7.6",  theme: Physical, title: "Working in secure areas"}
+  - {id: "7.7",  theme: Physical, title: "Clear desk and clear screen"}
+  - {id: "7.8",  theme: Physical, title: "Equipment siting and protection"}
+  - {id: "7.9",  theme: Physical, title: "Security of assets off-premises"}
+  - {id: "7.10", theme: Physical, title: "Storage media"}
+  - {id: "7.11", theme: Physical, title: "Supporting utilities"}
+  - {id: "7.12", theme: Physical, title: "Cabling security"}
+  - {id: "7.13", theme: Physical, title: "Equipment maintenance"}
+  - {id: "7.14", theme: Physical, title: "Secure disposal or re-use of equipment"}
+
+  # ---- 8. Technological controls (34) ----
+  - {id: "8.1",  theme: Technological, title: "User endpoint devices"}
+  - {id: "8.2",  theme: Technological, title: "Privileged access rights"}
+  - {id: "8.3",  theme: Technological, title: "Information access restriction"}
+  - {id: "8.4",  theme: Technological, title: "Access to source code"}
+  - {id: "8.5",  theme: Technological, title: "Secure authentication"}
+  - {id: "8.6",  theme: Technological, title: "Capacity management"}
+  - {id: "8.7",  theme: Technological, title: "Protection against malware"}
+  - {id: "8.8",  theme: Technological, title: "Management of technical vulnerabilities"}
+  - {id: "8.9",  theme: Technological, title: "Configuration management"}
+  - {id: "8.10", theme: Technological, title: "Information deletion"}
+  - {id: "8.11", theme: Technological, title: "Data masking"}
+  - {id: "8.12", theme: Technological, title: "Data leakage prevention"}
+  - {id: "8.13", theme: Technological, title: "Information backup"}
+  - {id: "8.14", theme: Technological, title: "Redundancy of information processing facilities"}
+  - {id: "8.15", theme: Technological, title: "Logging"}
+  - {id: "8.16", theme: Technological, title: "Monitoring activities"}
+  - {id: "8.17", theme: Technological, title: "Clock synchronization"}
+  - {id: "8.18", theme: Technological, title: "Use of privileged utility programs"}
+  - {id: "8.19", theme: Technological, title: "Installation of software on operational systems"}
+  - {id: "8.20", theme: Technological, title: "Networks security"}
+  - {id: "8.21", theme: Technological, title: "Security of network services"}
+  - {id: "8.22", theme: Technological, title: "Segregation of networks"}
+  - {id: "8.23", theme: Technological, title: "Web filtering"}
+  - {id: "8.24", theme: Technological, title: "Use of cryptography"}
+  - {id: "8.25", theme: Technological, title: "Secure development life cycle"}
+  - {id: "8.26", theme: Technological, title: "Application security requirements"}
+  - {id: "8.27", theme: Technological, title: "Secure system architecture and engineering principles"}
+  - {id: "8.28", theme: Technological, title: "Secure coding"}
+  - {id: "8.29", theme: Technological, title: "Security testing in development and acceptance"}
+  - {id: "8.30", theme: Technological, title: "Outsourced development"}
+  - {id: "8.31", theme: Technological, title: "Separation of development, test and production environments"}
+  - {id: "8.32", theme: Technological, title: "Change management"}
+  - {id: "8.33", theme: Technological, title: "Test information"}
+  - {id: "8.34", theme: Technological, title: "Protection of information systems during audit testing"}
