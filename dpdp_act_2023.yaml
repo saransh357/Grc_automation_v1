@@ -1,0 +1,40 @@
+# India - Digital Personal Data Protection Act, 2023 (+ DPDP Rules, 2025)
+# Modelled as discrete Data Fiduciary REQUIREMENTS (not security controls), keyed by Act section.
+# Educational mapping for a portfolio project - NOT legal advice. Verify against the
+# Gazette text and take qualified legal counsel before relying on any of it.
+framework:
+  id: dpdp_act_2023
+  short: DPDP
+  name: "Digital Personal Data Protection Act, 2023 (with DPDP Rules, 2025)"
+  kind: requirement_set
+  aggregation: mean   # how supporting-control status rolls up: weakest | mean
+  version: "Act 2023 / Rules 2025"
+  commencement_note: >
+    DPDP Rules were notified on 13 Nov 2025 with phased commencement; the substantive
+    Data Fiduciary obligations were originally scheduled for 18 months after notification
+    (13 May 2027). MeitY consulted in early 2026 on compressing this to 12 months.
+    CHECK THE CURRENT STATUS before you quote dates in your portfolio.
+
+# max_penalty_inr_crore: ceiling from the Schedule to the Act, by type of breach.
+# Phase 2 (FAIR) uses these ceilings to cap the regulatory-fine loss component.
+items:
+  - {id: "S4",    theme: "Lawful processing", title: "Grounds for processing personal data (consent or legitimate use)", max_penalty_inr_crore: 50}
+  - {id: "S5",    theme: "Lawful processing", title: "Notice to the Data Principal before / at consent", max_penalty_inr_crore: 50}
+  - {id: "S6",    theme: "Lawful processing", title: "Consent: free, specific, informed, unambiguous; withdrawal as easy as giving", max_penalty_inr_crore: 50}
+  - {id: "S7",    theme: "Lawful processing", title: "Certain legitimate uses (e.g. voluntarily provided data, legal obligations)", max_penalty_inr_crore: 50}
+  - {id: "S8(1)", theme: "Fiduciary duties",  title: "Data Fiduciary is responsible for compliance, including processing by its Data Processors", max_penalty_inr_crore: 50}
+  - {id: "S8(2)", theme: "Fiduciary duties",  title: "Data Processor engaged only under a valid contract", max_penalty_inr_crore: 50}
+  - {id: "S8(3)", theme: "Fiduciary duties",  title: "Completeness, accuracy and consistency of data used for decisions / disclosed", max_penalty_inr_crore: 50}
+  - {id: "S8(4)", theme: "Fiduciary duties",  title: "Appropriate technical and organisational measures to ensure compliance", max_penalty_inr_crore: 50}
+  - {id: "S8(5)", theme: "Fiduciary duties",  title: "Reasonable security safeguards to prevent personal data breach (Rule 6)", max_penalty_inr_crore: 250}
+  - {id: "S8(6)", theme: "Fiduciary duties",  title: "Intimation of personal data breach to the Board and affected Data Principals (Rule 7)", max_penalty_inr_crore: 200}
+  - {id: "S8(7)", theme: "Fiduciary duties",  title: "Erasure when consent withdrawn or purpose no longer served (Rule 8)", max_penalty_inr_crore: 50}
+  - {id: "S8(9)", theme: "Fiduciary duties",  title: "Publish business contact details of DPO / person answering Data Principal queries", max_penalty_inr_crore: 50}
+  - {id: "S8(10)", theme: "Fiduciary duties", title: "Grievance redressal mechanism for Data Principals", max_penalty_inr_crore: 50}
+  - {id: "S9",    theme: "Children",          title: "Children's data: verifiable parental consent; no tracking or targeted advertising", max_penalty_inr_crore: 200}
+  - {id: "S10",   theme: "Significant Data Fiduciary", title: "SDF duties: India-based DPO, independent data auditor, periodic DPIA (Rule 13)", max_penalty_inr_crore: 150}
+  - {id: "S11",   theme: "Data Principal rights", title: "Right to access information about personal data processed", max_penalty_inr_crore: 50}
+  - {id: "S12",   theme: "Data Principal rights", title: "Right to correction, completion, updating and erasure", max_penalty_inr_crore: 50}
+  - {id: "S13",   theme: "Data Principal rights", title: "Right of grievance redressal", max_penalty_inr_crore: 50}
+  - {id: "S14",   theme: "Data Principal rights", title: "Right to nominate another person to exercise rights", max_penalty_inr_crore: 50}
+  - {id: "S16",   theme: "Cross-border",      title: "Transfer of personal data outside India (subject to government restrictions)", max_penalty_inr_crore: 50}
